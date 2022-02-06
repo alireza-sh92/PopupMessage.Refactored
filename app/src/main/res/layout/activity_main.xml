@@ -4,15 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0DAA00AA"
+    android:clickable="true"
+    android:elevation="32dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:translationZ="64dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goToTextInserted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:clickable="true"
+        android:elevation="16dp"
+        app:cardBackgroundColor="#3C00AAAA"
+        app:cardCornerRadius="32dp"
+        android:translationZ="32dp"
+        android:transformPivotX="32dp"
+        android:transformPivotY="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#981B1B"
+            android:padding="16dp"
+            android:text="Click Me!"
+            android:textSize="24dp" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
